@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/5c2d7b0b-b5b5-40a9-864d-fbf8283382a9/files/bd028937-b69f-4788-b797-7cdd605da56a.jpg";
-const FIGHT_IMAGE = "https://cdn.poehali.dev/projects/5c2d7b0b-b5b5-40a9-864d-fbf8283382a9/files/b26f2bf5-0945-4f8b-8355-e0b11f1599a3.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/5c2d7b0b-b5b5-40a9-864d-fbf8283382a9/files/3f824fa5-ead0-430a-ba43-dfd10baf5916.jpg";
+const FIGHT_IMAGE = "https://cdn.poehali.dev/projects/5c2d7b0b-b5b5-40a9-864d-fbf8283382a9/files/94db5cf0-d864-49b3-9fee-363e1f1cc6f3.jpg";
 const PHONE = "+7‒918‒996‒69‒33";
 const PHONE_CLEAN = "+79189966933";
 
@@ -174,8 +174,8 @@ export default function Index() {
             </div>
 
             <p className="font-roboto text-gray-600 text-base leading-relaxed mb-10 max-w-md">
-              Занятия для детей от 3 лет и взрослых. Опытные тренеры,
-              профессиональный зал, дружная атмосфера.
+              Ваш ребёнок станет увереннее, крепче и дисциплинированнее.
+              Принимаем детей от 3 лет — без опыта и специальной подготовки.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -192,8 +192,8 @@ export default function Index() {
             <div className="flex items-center gap-0 border-l-2 border-karate-red">
               {[
                 { num: "10+", label: "лет опыта" },
-                { num: "200+", label: "учеников" },
-                { num: "3", label: "года — старт" },
+                { num: "200+", label: "детей занималось" },
+                { num: "от 3", label: "лет принимаем" },
               ].map((s, i) => (
                 <div key={s.label} className={`px-6 py-2 ${i < 2 ? "border-r border-gray-200" : ""}`}>
                   <div className="font-oswald font-black text-2xl text-karate-red leading-none">{s.num}</div>
@@ -226,27 +226,27 @@ export default function Index() {
               <div>
                 <span className="font-oswald font-medium text-white/60 text-sm uppercase tracking-[0.3em] block mb-4">О нас</span>
                 <h2 className="font-oswald font-black text-5xl sm:text-6xl uppercase text-white leading-tight mb-8">
-                  Сила духа<br />
-                  <span className="text-white/30">рождается</span><br />
-                  в зале
+                  Растём<br />
+                  <span className="text-white/30">сильными</span><br />
+                  вместе
                 </h2>
                 <p className="font-roboto text-white/80 text-base leading-relaxed mb-6">
-                  Наша школа киокушинкай карате в Геленджике — место, где дети и взрослые открывают
-                  в себе силу, дисциплину и уверенность. Киокушинкай — один из самых честных
-                  стилей карате, воспитывающий настоящий боевой дух.
+                  Мы знаем, как найти подход к каждому ребёнку. Тренировки проходят в тёплой,
+                  дружеской атмосфере — здесь не кричат и не пугают, а вдохновляют и поддерживают.
                 </p>
                 <p className="font-roboto text-white/80 text-base leading-relaxed">
-                  Мы принимаем всех — от трёхлетних малышей до взрослых любого уровня подготовки.
-                  Наши тренеры — сертифицированные специалисты с многолетним опытом.
+                  Киокушинкай воспитывает не только физическую силу, но и характер: упорство,
+                  уважение к старшим, уверенность в себе. Именно это родители замечают уже после
+                  первых месяцев занятий.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { icon: "Trophy", title: "Чемпионы России", desc: "Наши ученики — победители всероссийских соревнований" },
-                  { icon: "Users", title: "Группы по возрасту", desc: "Отдельные программы для детей и взрослых" },
-                  { icon: "MapPin", title: "Центр города", desc: "Удобное расположение в самом центре Геленджика" },
-                  { icon: "Clock", title: "Гибкий график", desc: "Несколько удобных временных слотов для занятий" },
+                  { icon: "Heart", title: "Безопасная среда", desc: "Занятия под строгим контролем тренера, без травм и агрессии" },
+                  { icon: "Star", title: "Первый пояс за 3 мес.", desc: "Быстрый прогресс мотивирует детей заниматься с удовольствием" },
+                  { icon: "MapPin", title: "Центр Геленджика", desc: "Удобное расположение — легко добраться после школы" },
+                  { icon: "Clock", title: "Гибкий график", desc: "Утренние и вечерние группы, подберём удобное время" },
                 ].map((f) => (
                   <div key={f.title} className="bg-white/10 border border-white/20 p-5 hover:bg-white/20 transition-colors">
                     <Icon name={f.icon} size={20} className="text-white mb-3" />
@@ -259,6 +259,38 @@ export default function Index() {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-white" style={{ clipPath: "polygon(0 60%, 100% 0, 100% 100%, 0 100%)" }} />
+      </section>
+
+      {/* BENEFITS FOR KIDS */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <span className="font-oswald font-medium text-karate-red text-sm uppercase tracking-[0.3em] block mb-3">Почему карате?</span>
+            <h2 className="font-oswald font-black text-4xl sm:text-5xl uppercase text-gray-900">
+              Что даёт карате <span className="text-karate-red">вашему ребёнку</span>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: "Brain", title: "Концентрация и учёба", desc: "Дети с карате лучше сосредотачиваются и успевают в школе" },
+              { icon: "Shield", title: "Самозащита", desc: "Ребёнок умеет постоять за себя — спокойно и без паники" },
+              { icon: "Smile", title: "Уверенность в себе", desc: "Каждый пояс и победа укрепляют самооценку" },
+              { icon: "Activity", title: "Физическое здоровье", desc: "Гибкость, выносливость, правильная осанка с детства" },
+              { icon: "Users", title: "Новые друзья", desc: "В группе формируется настоящая командная дружба" },
+              { icon: "Award", title: "Дисциплина и цели", desc: "Дети учатся ставить цели и добиваться их шаг за шагом" },
+            ].map((b) => (
+              <div key={b.title} className="flex gap-4 p-5 border border-gray-100 hover:border-karate-red/30 hover:bg-red-50/50 transition-all duration-300 group">
+                <div className="w-10 h-10 bg-karate-red/10 group-hover:bg-karate-red flex items-center justify-center flex-shrink-0 transition-colors">
+                  <Icon name={b.icon} size={18} className="text-karate-red group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                  <div className="font-oswald font-bold text-base uppercase text-gray-900 mb-1">{b.title}</div>
+                  <div className="font-roboto text-gray-500 text-sm leading-relaxed">{b.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* DIRECTIONS */}
